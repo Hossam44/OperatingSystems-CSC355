@@ -1,0 +1,39 @@
+#!/bin/bash
+clear
+cd /home/metwally/Desktop
+mkdir dir
+cd dir
+
+mkdir first second
+cd first
+
+cat > file1 << EOF
+file 1
+EOF
+
+cat > file2 << EOF
+file 2
+EOF
+
+cat > file3 << EOF
+file 3
+EOF
+
+cd ..
+
+cp /home/metwally/Desktop/dir/first/file1 /home/metwally/Desktop/dir/second/
+cd second
+
+touch cou
+
+who > cou && ls | wc -l >> cou
+
+touch a1
+touch a2
+touch A1
+
+ls a* && ls A*
+ls | wc -l
+
+echo "success"
+ 
